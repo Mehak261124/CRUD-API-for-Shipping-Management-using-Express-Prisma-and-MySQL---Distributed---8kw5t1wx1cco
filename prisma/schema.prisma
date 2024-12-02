@@ -18,5 +18,5 @@ model Shipping{
   userId	Int 
   productId	Int
   count	Int
-  status	String	
+  status	String	@default("pending")
 }
