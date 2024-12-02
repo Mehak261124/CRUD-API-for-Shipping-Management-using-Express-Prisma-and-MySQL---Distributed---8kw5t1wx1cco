@@ -21,7 +21,7 @@ const createProduct = async (req, res) => {
 
 const updateProduct = async (req, res) => {
   try {
-    const { shippingId } = req.params;
+    const { shippingId } = req.body;
 
     if (!shippingId) {
       return res.status(404).json({ error: "Missing shippingId" });
